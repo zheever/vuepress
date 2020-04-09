@@ -17,14 +17,14 @@ module.exports = {
           title:'css',
           collapsable: true,
           children:[
-            '/blogs/css/css-rule'
+            '/blogs/css/css'
           ]
         },
         {
           title:'javascript',
           collapsable: true,
           children:[
-            '/blogs/javascript/js-rule'
+            '/blogs/javascript/javascript'
           ]
         }
       ]
