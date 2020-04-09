@@ -4,8 +4,7 @@ const utils = {
         arr.push({
             title,
             children,
-            collapsable,
-            sidebarDepth
+            collapsable
         });
         return arr;
     }

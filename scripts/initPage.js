@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require("path");
 // 排除检查的文件
 var excludes = ['.DS_Store']
 
@@ -9,7 +10,7 @@ var filehelper = {
         let fileTypes = /\.md$/; //只匹配以md结尾的文件
         fs.readdirSync(rpath).forEach(file => {
             if (excludes.indexOf(file) < 0 ) {
-                fullpath = rpath+"/"+file
+                fullpath = path.resolve(rpath, file);
                 var fileinfo = fs.statSync(fullpath)
                 if(fileinfo.isFile()){
                     // if(file.indexOf('.md') > 0) {
@@ -19,7 +20,7 @@ var filehelper = {
                         } else {
                             file = file.replace('.md', '');
                         }
-                        filenames.push(file);
+                        filenames.push('/docs/' + file);
                     }
                 }
             }
