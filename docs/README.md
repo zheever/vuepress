@@ -1,15 +1,15 @@
 ---
 home: true 
 heroImage: /images/vuejsradar.png
-actionText: Try it Out →
-actionLink: /welcome
+actionText: 开始阅读 →
+actionLink: /blogs/css/css.html
 features:
-- title: Markdown Editing 
-  details: Netlify's CMS provides a flexible Markdown Editor 
-- title: Asset Management 
-  details: Easily upload images to your repo with an uploader 
-- title: Powerful Deployments
-  details: Leverage the power of netlify and VuePress to deploy statically 
+- title: Javascript 规范 
+  details: Javascript 相关规范和注意事项
+- title: Css 规范
+  details: Css 相关规范和注意事项
+- title: 更多
+  details: 其它相关文档
 footer: MIT Licensed | Copyright © 2018-present Andre Liem (www.vuejsradar.com) 
 title: FRONT PAGE
 ---

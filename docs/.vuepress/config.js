@@ -3,8 +3,6 @@ const rootpath = path.dirname(__dirname); //执行一次dirname将目录定位�
 const utils = require('../../scripts/utils.js');
 const filehelper = require('../../scripts/initPage.js');
 
-console.log(filehelper.getFileName(rootpath, "/blogs/css"));
-
 module.exports = {
   title: 'XFE DOCUMENT',
   description: 'Netlify + VuePress',
@@ -16,16 +14,17 @@ module.exports = {
         {
           title:'css文档',
           collapsable: false,
-          children:[
-            '/blogs/css/css'
-          ]
+          children: filehelper.getFileName(rootpath, "/blogs/css")
         },
         {
           title:'javascript文档',
           collapsable: false,
-          children:[
-            '/blogs/javascript/javascript'
-          ]
+          children: filehelper.getFileName(rootpath, "/blogs/javascript")
+        },
+        {
+          title:'about文档',
+          collapsable: false,
+          children: filehelper.getFileName(rootpath, "/blogs/about")
         }
       ]
     },
