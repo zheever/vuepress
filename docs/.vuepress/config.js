@@ -3,10 +3,10 @@ const rootpath = path.dirname(__dirname); //执行一次dirname将目录定位�
 const utils = require('../../scripts/utils.js');
 const filehelper = require('../../scripts/initPage.js');
 
-console.log(utils.genSidebar('javascript', filehelper.getFileName(rootpath+"/"), true));
+console.log(filehelper.getFileName(rootpath, "/blogs/css"));
 
 module.exports = {
-  title: 'Netlify CMS + VuePress',
+  title: 'XFE DOCUMENT',
   description: 'Netlify + VuePress',
   themeConfig: {
     docsDir: 'docs',
@@ -14,15 +14,15 @@ module.exports = {
     sidebar: {
       '/blogs/': [
         {
-          title:'css',
-          collapsable: true,
+          title:'css文档',
+          collapsable: false,
           children:[
             '/blogs/css/css'
           ]
         },
         {
-          title:'javascript',
-          collapsable: true,
+          title:'javascript文档',
+          collapsable: false,
           children:[
             '/blogs/javascript/javascript'
           ]
